@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --project ./",
-    "start": "nodemon --exec ts-node server.ts"
+    "start": "nodemon server.ts"
   },
   "author": "Saloni Agarwal",
   "license": "ISC",
@@ -15,7 +15,10 @@
     "express": "^4.17.2",
     "firebase": "^9.6.6",
     "firebase-admin": "^10.0.2",
-    "npm": "^8.5.0"
+    "nodemon": "^2.0.15",
+    "npm": "^8.5.0",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",

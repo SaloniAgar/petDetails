@@ -1,16 +1,12 @@
-
+"use strict";
 // import admin from 'firebase-admin';
 // import * as firebaseAccountCredentials from './serviceAccountKey.json';
 // import express from 'express'
-
 // const serviceAccount = firebaseAccountCredentials as admin.ServiceAccount;
-
 // const db = admin.initializeApp({
 //     credential: admin.credential.cert(serviceAccount),
 // }).firestore();
-
 // const petsDB = db.collection('petsinfo');
-
 // //Adding data
 // async addData() : Promise<void>{
 //     await petsDB
@@ -25,7 +21,6 @@
 //         .then(() => console.log("Pet added"))
 //         .catch((error) => console.log(error));
 // }
-    
 // //Fetching data
 //  async displayData(){
 //      const bru4Chow =  await petsDB.doc('bru4Chow').get();
@@ -36,8 +31,6 @@
 //         console.log('No such document exists');
 //     }
 //  }
-    
-
 //  //Updating data
 //    async updatedata(){
 //       await petsDB
@@ -48,12 +41,9 @@
 //             .then(() => console.log("updated"))
 //             .catch((error) => console.log(error)); 
 //    } 
-    
-
 //     //Delete data
 //     async deleteData(){
 //         await petsDB.doc('bru4Chow').delete(); 
 //     }
-    
- // "build": "tsc --project ./",
-    // "start": "nodemon server.ts"
+// "build": "tsc --project ./",
+// "start": "nodemon server.ts"

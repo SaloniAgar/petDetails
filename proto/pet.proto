@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package petPackage;
+
+service PetService{
+    rpc addPet(Pet) returns (Response){} ;
+    rpc updatePet(Pet) returns (Response) {};
+    rpc deletePet(Pet) returns (Response) {} ;
+    rpc getAllPets(Empty) returns (Pets) {};
+}
+
+message Empty{}
+
+message Pet{
+    string name = 1;
+    string category = 2;
+    string breed = 3;
+    string age = 4;
+    string color = 5;
+}
+
+message Pets{
+    repeated Pet pet = 1;
+}
+message Response{
+    int32 status = 1;
+}

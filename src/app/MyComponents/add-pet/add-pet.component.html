@@ -1,0 +1,29 @@
+<div class="container my-3">
+
+    <h4>Add a Pet</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" [(ngModel)]="name" class="form-control" id="name" name="name">
+        </div>
+    
+        <div class="form-group">
+          <label for="category" >Category</label>
+          <input type="text" [(ngModel)]="category" class="form-control" id="category" placeholder="Eg : Dogs,Cats,Birds,etc" name="category">
+        </div>
+
+        <div class="form-group">
+            <label for="breed" >Breed</label>
+            <input type="text" [(ngModel)]="breed" class="form-control" id="breed" name="breed">
+          </div>
+          <div class="form-group">
+            <label for="age" >Age</label>
+            <input type="text" [(ngModel)]="age" class="form-control" id="age" placeholder="Eg : 5 months,8 months,1 year,etc" name="age">
+          </div>
+          <div class="form-group mb-3">
+            <label for="color" >Color</label>
+            <input type="text" [(ngModel)]="color" class="form-control" id="color" name="color">
+          </div>
+        <button type="submit" class="btn btn-sm btn-primary">Add</button>
+    </form>
+</div>

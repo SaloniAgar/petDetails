@@ -1,0 +1,10 @@
+<app-add-pet (petAdd)="addPet($event)"></app-add-pet>
+<h4>Available Pets</h4>
+<div *ngIf="this.pets.length === 0; else elseBlock">No Pets available</div>
+<ng-template #elseBlock>
+
+    <div *ngFor="let pet of pets">
+        <app-pet-item [pet]="pet" (petDelete)="deletePet($event)">
+        </app-pet-item>
+    </div>
+</ng-template>

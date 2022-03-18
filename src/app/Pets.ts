@@ -1,5 +1,5 @@
 export class Pets{
-    sno!: number
+    id!:string
     name!: string
     category!: string
     breed!: string

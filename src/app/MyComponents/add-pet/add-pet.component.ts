@@ -23,7 +23,7 @@ export class AddPetComponent implements OnInit {
 
   onSubmit(){
     const pet = {
-      sno: 14,
+      id:this.name.substring(0,2)+this.breed.substring(0,3),
       name:this.name,
       category: this.category,
       breed: this.breed,
